@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Задание 7</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/calc.js" defer></script>
+    <style>
+        body {
+            background-image: url(img/bg.jpg);
+        }
+
+        a {
+            color: rgb(32, 138, 187);
+
+        }
+    </style>
+
+
+</head>
+
+
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="img/log.jpg" width="220" height="220"> </a>
+        <h1 align="center"> Задание 6 </h1>
+    </div>
+
+    <div class="topnav">
+        <nav class=menu>
+            <a href="exampl.com"> Ссылка меню 1</a>
+            <a href="exampl.com"> Ссылка меню 2</a>
+            <a href="exampl.com"> Ссылка меню 3</a>
+        </nav>
+    </div>
+
+
+</header>
+
+<body>
+    <div class="wrapper">
+        <div class="slider">
+        <div class="slider_item">
+        <img src="img/c (1).jpg" class="img-fluid" alt="" style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (2).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (3).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (4).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (5).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (6).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (7).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (8).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (9).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (10).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (11).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (12).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (13).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (14).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        <div class="slider_item">
+        <img src="img/c (15).jpg" class="img-fluid" alt=""style="width: 300px; height: 300px;">
+        </div>
+        </div>
+        </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="calculator">
+                    <h2>Рассчитаем стоимость занятия</h2>
+
+                    <div>
+                        <h4>Что вас интересует</h4>
+                        <select name="myselect">
+                            <option value="1">Математика ОГЭ</option>
+                            <option value="2">Подтянуть успеваемость</option>
+                            <option value="3">Математика ЕГЭ</option>
+                        </select>
+                    </div><br />
+                    <div class="myradios" id="myradios">
+                        <div>
+                            <label><input type="radio" name="myradio" value="r1">Начальная школа(1-4 класс)</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="myradio" value="r2">Средняя школа(5-9 класс)</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" name="myradio" value="r3">Старшая школа(10-11 класс)</label>
+                        </div>
+                    </div>
+                    <label id="check-1">
+                        <input type="checkbox" name="check-1" value="1" />
+                        Базовый уровень
+                    </label>
+                    <br>
+                    <h6>Цена:</h6>
+                    <div id="result1"></div>
+
+
+                    <br><br><br>
+                    <form id="calc">
+
+                        <h5>Стоимость нескольких занятий</h5>
+                        <h6>Введите колличество занятий</h6>
+                        <input name="field2" type="text" id="field2">
+                        <h6>Введите стоимость занятия</h6>
+                        <input name="field1" type="text" id="field1">
+                        <br><br>
+                        <button id="button1" onclick="return onClick1()">
+                            <h6>Рассчитать</h6>
+                        </button>
+                        <button id="button2" onclick="return onClick2()">
+                            <h6>Отмена</h6>
+                        </button>
+                        <br><br>
+                        <h6>Итоговая стоимость:</h6>
+                        <div id="result2"></div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+
+                <div class="spisok">
+                    <h2> Список </h2>
+                    <ol>
+                        <li><a href="http://example.com">Абсолютная </a></li>
+                        <li><a href="https://example.com">Абсолютная в https</a></li>
+                        <li><a href="ftp://stonehub.ru/FAQ/manual.txt">Файл FTP без авторизации</a></li>
+                        <li><a href="ftp://antonina:antonina2002@stonehub.ru/questions/help.txt">Файл FTP с
+                                авторизацией</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница#top">Фрагмент сайта</a></li>
+                        <li><a href=“#top”>Фрагмент этой страницы</a></li>
+                        <li><a href="https://moodle.kubsu.ru/course/view.php?id=780">Два URL</a></li>
+                        <li><a href="https://moodle.kubsu.ru/">Список </a></li>
+                        <li>
+                            <nav>
+                                <ul>
+                                    <li><a href="https://moodle.kubsu.ru/course/index.php?categoryid=4"> Title </a></li>
+                                    <li><a href="https://moodle.kubsu.ru/course/index.php?categoryid=5"> Title </a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                        <li><a>Ссылка без href</a></li>
+                        <li><a href="">Пустойhref</a></li>
+                        <li><a href="https://moodle.kubsu.ru/" rel=nofollow>Запрещенный переход</a></l>
+                        <li>
+                            <!--noindex--><a href="https://moodle.kubsu.ru/">Запрещенная индексация</a></l>
+                        <li> <a>Контекстная</a> </li>
+                        <li>
+                            <a>
+                                Изображение-ссылка <br /><a href="http://example.com/">
+                                    <img src="img/imgn.jpg" alt="Цветок" style="width: 300px;" />
+                                </a>
+                        </li>
+                        <map name="primary">
+                            <area shape="circle" coords="150,100,50" href="https://vk.com">
+                            <area shape="rect" coords="1,1,50,50" href="https://seriahd.tv">
+                        </map>
+                        <li>
+                            Ссылка квадрат в левом верхнем углу, круг - верхний лепесток <br />
+                            <img usemap="#primary" src="img/imgn.jpg" alt="Цветок" style="width: 300px;" />
+                        </li>
+
+                        <li><a href="about/files.html">Страница в каталоге about</a></li>
+                        <li><a href="../index.html">Страница в каталоге уровнем выше</a></li>
+                        <li><a href="../../index.html">Страница в каталоге двумя уровнями выше</a></li>
+                        <li><a href="">Сокращенная на главную</a> </li>
+                        <li><a href="/abouut/page.html">Сокращенная на внутреннюю</a></li>
+                    </ol>
+                </div>
+
+            </div>
+
+            <div class="formandtable">
+
+                <div class="col-sm-6 order-sm-first order-last">
+
+                    <div class="tablitsa">
+
+                        <h3>Таблица</h3>
+                        <table border="3">
+                            <tr bgcolor="f707afa6">
+                                <th>Колонка 1</th>
+                                <th>Колонка 2</th>
+                                <th>Колонка 3</th>
+                            </tr>
+                            <tr bgcolor="#faebd7">
+                                <td>1</td>
+                                <td colspan="2"> 2, 3</td>
+                            </tr>
+                            <tr bgcolor="f707afa6">
+                                <td colspan="2"> 4, 5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr bgcolor="#faebd7">
+                                <td colspan="3"> 7, 8, 9</td>
+                            </tr>
+                            <tr bgcolor="f707afa6">
+                                <td rowspan="2"> 10,13</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr bgcolor="#faebd7">
+                                <td> 14</td>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <br><br><br><br><br><br><br><br>
+
+                <div class="col-sm-6 order-sm-last order-first">
+
+                    <div class="form">
+                        <form action="/" method="post">
+                            <h2>Форма</h2>
+                            <label>
+                                Имя:<br />
+                                <input name="field-name-1" value="Введите имя" />
+                            </label><br />
+
+                            <label>
+                                Адрес электронной почты:<br />
+                                <input name="field-name-1" value="email" type="email" />
+                            </label><br />
+
+                            <label>
+                                Дата рождения:<br />
+                                <input name="field-name-1" value="2021-09-13" type="date" />
+                            </label><br />
+
+                            Пол?:<br />
+                            <label>
+                                <input type="radio" checked="checked" name="radio-group-2" value="Значение1" />
+                                Женский
+                            </label>
+                            <label>
+                                <input type="radio" name="radio-group-2" value="Значение2" />
+                                Мужской
+                            </label><br />
+
+                            Колличество конечностей?:<br />
+                            <label>
+                                <input type="radio" checked="checked" name="radio-group-1" value="Значение1" />
+                                1
+                            </label>
+                            <label>
+                                <input type="radio" name="radio-group-1" value="Значение2" />
+                                2
+                            </label><br />
+                            <label>
+                                <input type="radio" name="radio-group-1" value="Значение3" />
+                                3
+                            </label><br />
+                            <label>
+                                <input type="radio" name="radio-group-1" value="Значение5" />
+                                Более
+                            </label><br />
+
+
+                            <label>
+                                Сверхспособности
+                                <br />
+                                <select name="field-name-4[]" multiple="multiple">
+                                    <option value="Значение1">Бессмертие</option>
+                                    <option value="Значение2" selected="selected">Прохождение сквозь стены</option>
+                                    <option value="Значение3" selected="selected">Левитация</option>
+                                </select>
+                            </label><br />
+
+                            <label>
+                                Биография:<br />
+                                <textarea name="field-name-2">О себе</textarea>
+                            </label><br />
+
+                            Чекбокс<br />
+                            <label>
+                                <input type="checkbox" checked="checked" name="check-1" />
+                                С контрактом ознакомлен
+                            </label><br />
+
+
+                            <input type="submit" value="Отправить" />
+                        </form>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
+
+</body>
+
+<a id=“top”>
+    <footer>
+        <div class="podval">
+            <h6 align="center">(c) Зайцева Антонина</h6>
+        </div>
+    </footer>
