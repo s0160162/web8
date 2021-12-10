@@ -1,0 +1,154 @@
+.chet {
+    background-color: rgba(255, 35, 237, 0.26);
+}
+.nechet {
+    background-color: rgba(255, 35, 237, 0.26);
+}
+a {
+    color: rgb(44, 8, 248);
+    text-decoration: none;
+}
+a:hover {
+    color: #800000; 
+    text-decoration: underline; 
+}
+#nav1, #nav2, #nav3 {
+    background-color: rgba(255, 35, 237, 0.26);
+    border: 3px solid rgb(167, 0, 125);
+    font-size: 25px;
+}
+body {
+    background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614603936_107-p-belii-fon-s-serdtsem-116.jpg);
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    color: black;
+    font-size: large;
+}
+#logo {
+    width: 150px;
+    
+    
+}
+header {
+    font-size: 50px;
+    font-weight: bold;
+    background-color: rgba(255, 35, 237, 0.226);
+}
+.container, .container-fluid {
+    background-color:rgba(255, 35, 237, 0.267);
+}
+
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    margin: -30px 0px 0px 0px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 60px;
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+    left: 0;
+    border: none;
+    background: url('../img/left.png') 0 0 / 100% no-repeat;
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+    right: 0;
+    border: none;
+    background: url('../img/right.png') 0 0 / 100% no-repeat;
+}
+
+
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+/* Элемент точки */
+.slick-dots li button{
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.slider{
+    position: relative;
+    padding: 0px 60px;
+}
+
+
+
+
+.popup-overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(32, 9, 29, 0.486);
+    z-index: 100;
+}
+.popWindow{
+    display: none;
+    margin: auto;
+    max-width: 720px;
+    padding-bottom: 20px;
+    top:50%;
+    left:50%;
+    box-shadow: 0 0 30px rgba(18, 17, 12, 0.5);
+    background-color: gainsboro;
+}
+.popWindow h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    z-index: 10;
+    position: relative;
+}
+.close-btn{
+    float:right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    color: rgb(34, 34, 34);
+    padding: 10px;
+}
+.thank-you-window{
+    margin: auto;
+    display: none;
+    padding: 5px;
+    height: 100px;
+    width: 320px;
+    box-shadow: 0 0 30px rgba(18, 17, 12, 0.5);
+    background-color: gainsboro;
+}
+.thank-you-message{
+    font-size: 25px;
+}
+.popup-main-window{
+    width: 360px;
+}

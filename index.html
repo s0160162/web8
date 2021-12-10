@@ -1,0 +1,329 @@
+<html lang="ru">
+<head>
+ 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Задание</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylee.css">
+  <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=T5AmJhqMvOQKb-BMq-Dmgrw7O5hVFquYqbiru9O8CrcMpAgZYOypf8Z5PAbaaabPCIo8MneTW8hEeR0ChLfs9j9bhKHajtZymo2VMccjYPU" charset="UTF-8"></script><script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/slick.min.js" defer></script>
+  <style>
+    body {
+        background-image: url(img/bg.jpg);
+    }
+
+    a {
+        color: rgb(32, 138, 187);
+
+    }
+</style>
+
+</head>
+<body>
+
+  <div class="d-flex flex-column flex-nowrap">
+  
+    <div class="order-md-1 order-sm-1 order-1">
+      <header>
+        <div class="container-fluid my-3">
+          <div class="container p-3">
+            <div><img class="w-30" id="logo" src="img/log.jpg" alt="logo"> Задание 7</div>
+          </div>
+        </div>
+      </header>
+    </div> 
+
+    <div class="order-md-2 order-sm-2 order-2">
+      <nav>
+        <div class="container page my-3 p-3">
+          <div class="row">
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav1">
+                <a href="index.html">Ссылка меню 1</a>
+              </div>
+            </div>
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav2">
+                <a href="new.html">Ссылка меню 2</a>
+              </div>
+            </div>
+            <div class="col-md m-1">
+              <div class="h-100 py-3 p-3" id="nav3">
+                <a href = "#popup" id = "for-popup-form">Ссылка меню 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container order-md-5 order-sm-5 order-5 p-3 my-3">
+      <div class="slider">
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (1).jpg" width="300px" height="300px" >
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (2).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (3).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (4).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (5).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (6).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (7).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (8).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (9).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (10).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (11).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (12).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (13).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (14).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (15).jpg"width="300px" height="300px">
+      </div>
+      <div class="slider__item">
+        <img id="slider" class="img-fluid" src="img/c (16).jpg"width="300px" height="300px">
+      </div>
+      </div>
+    </div>
+
+    <div class="order-md-5 order-sm-5 order-5">
+      <div class="container p-3 my-3">
+        <h2>Калькулятор</h2>
+        Введите цену товара:
+        <input name="field1" type="text"> <br><br>
+        Введите количество : 
+        <input name="field2" type="text"><br><br>
+        <button id="count">Посчитать</button>
+        <strong>Результат: </strong><em id="result"></em>
+      </div>
+    </div>  
+    
+    <div class="container order-md-5 order-sm-5 order-5 p-3 my-3">
+      <form id="form">
+        <div class="heading">
+          <h2 class="heading-title">Калькулятор стоимости</h2>
+        </div>
+
+        <div class="calc-section">
+          <strong>Тип товара</strong><br>
+          <select name="myselect">
+            <option value="1">Математика ОГЭ</option>
+            <option value="2">Подтянуть успеваемость</option>
+            <option value="3">Математика ЕГЭ</option>
+          </select>
+        </div>
+
+        <div class="calc-section">
+          <label class="checkbox-wrapper title-bold section-title .section-title--vertical-center">
+            <span class="title__inline">Количество занятий</span>
+            <input type="number" min="1" max="200" value="1" id="square-input" class="title__inline input-short" />
+            <span class="title__inline"></span>
+          </label>
+        </div>
+        
+        <div class="calc-section" id="radios">
+          <label class="radio-wrapper" data-name="mobile">
+            <input type="radio" class="radio" name="type" value="1" checked /> Средняя школа(5-9 класс)
+          </label>
+          <label class="radio-wrapper" data-name="mobile">
+            <input type="radio" class="radio" name="type" value="2" /> Старшая школа
+          </label>
+        </div>
+        
+        <!--  -->
+        <div class="calc-section" id="checkbox">
+          <label class="radio-wrapper">
+            <input type="checkbox" class="radio" name="ceiling" value="-300" /> Базовый уровень
+          </label>
+        </div>
+
+        <!--  -->
+        <div class="calc-price">
+          <div class="calc-price-title">Стоимость:</div>
+          <div class="calc-price-value">
+            <span id="total-price">0</span>
+            рублей
+          </div>
+        </div>
+      
+      </form>
+    </div>
+
+   
+
+    <div class="order-md-3 order-sm-3 order-3">
+      <div class="container p-3 my-3">
+        <ol>
+          <li><a href="http://example.com">Абсолютная</a></li>
+          <li><a href="https://example.com">Абсолютная В https</a></li>
+          <li><a href="ftp://public.ftp-servers.example.com/myfile.zip">Файл FTP без авторизации</a></li>
+          <li><a href="ftp://user1:secretpassword@private.ftp-servers.example.com/myfile.zip" target="_blank">Файл FTP с авторизацией</a></li>
+          <li><a href="https://en.wikipedia.org/wiki/Mr._Dooley#catlinks">Фрагмент сайта</a></li>
+          <li><a href="#anchor">Фрагмент текущей страницы</a></li>
+          <li><a href="https://www.youtube.com/watch?v=Y3GGqqXlPQI&list=PLQOaTSbfxUtCw_ms8UJk5Dibdocup2eDa">Два URL</a></li>
+          <li>Список<br>
+          <ol>
+              <li><a href="new.html" title="Доп. инфа">Title</a></li>
+              <li><a href="about/about.html" title="инфа о сайте">Title</a></li>
+          </ol>
+          </li>
+          <li><a>Cсылкf без href</a></li>
+          <li><a href="">Cсылку с пустым href</a></li>
+          <li><a href="http://example.com/" rel="nofollow" target="_blank">Cсылку, по которой запрещен переход поисковикам</a></li>
+          <li><!--noindex--><a href="http://example.com/">Pапрещенная для индексации поисковиками</a> <!--/noindex--></li>
+          <li>Часть <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0">фразы</a> это ссылка</li>
+          <li><a target="_blank" href="new.html"><img src="img/imgn.jpg" alt="Класс" width="145" height="125"></a></li>
+          <li><img src="img/imgn.jpg" usemap="#figur" alt="Фигуры" width="345">
+    <map name="figur">
+    <area shape="rect" coords = "0,0,130,130" href="https://www.youtube.com/" alt="Прямоугольник">
+    <area shape="circle" coords ="280,280,59" href="https://validator.w3.org/nu/#textarea" alt="Круг">
+    </map></li>
+          <li><a href="new.html">Относительная на страницу в текущем каталоге</a></li>
+          <li><a href="about/about.html">Относительная на страницу в каталоге about</a></li>
+          <li><a href="../auxiliary№1.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+          <li><a href="../../auxiliary№2.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+          <li><a href="index.html">Сокращенная на главную</a></li>
+          <li><a href="about/about.html">Сокращенная ссылку на внутреннюю</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="order-md-4 order-sm-5 order-5">
+      <div class="container p-3 my-3">
+        <h3>Таблица</h3>
+        <table border="3">
+            <tr bgcolor="f707afa6">
+                <th>Колонка 1</th>
+                <th>Колонка 2</th>
+                <th>Колонка 3</th>
+            </tr>
+            <tr bgcolor="#faebd7">
+                <td>1</td>
+                <td colspan="2"> 2, 3</td>
+            </tr>
+            <tr bgcolor="f707afa6">
+                <td colspan="2"> 4, 5</td>
+                <td>6</td>
+            </tr>
+            <tr bgcolor="#faebd7">
+                <td colspan="3"> 7, 8, 9</td>
+            </tr>
+            <tr bgcolor="f707afa6">
+                <td rowspan="2"> 10,13</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr bgcolor="#faebd7">
+                <td> 14</td>
+                <td>15</td>
+            </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="order-md-5 order-sm-4 order-4">
+      <div class="container p-3 my-3">
+        <form action="/" method="POST">
+          Имя:
+          <br>
+          <input type="text" name="firstname">
+          <br>
+          E-mail:<br><input type="email" name="email">
+          <br>
+          Дата рождения:<br><input type="date" name="date">
+          <br>
+          Пол:<br>
+          <input type="radio" name="gender" checked="checked"> Мужской
+          <input type="radio" name="gender"> Женский
+          <br>
+          Количество конечностей:<br>
+          <input type="radio" name="4" checked="checked"> 4
+          <input type="radio" name="4"> 3
+          <input type="radio" name="4"> 2
+          <input type="radio" name="4"> 1
+          <input type="radio" name="4"> 0 
+          <br>
+          <p id="anchor"></p>Cверхспособности:<br>
+          <select name="superman" size="3" multiple>
+              <option value="1">Бессмертие</option>
+              <option value="2" selected="selected">Прохождение сквозь стены</option>
+              <option value="3">Левитация</option>
+          </select>
+          <br>
+          Биография:<br><textarea rows="4" cols="30"></textarea>
+          <br>
+          <input type="checkbox"> С контрактом ознакомлен(a) 
+          <br>
+          <input type="submit" id="send" value="Отправить">
+        </form>
+      </div>
+    </div>
+
+    
+    
+    <div class="order-md-last order-sm-last order-last">
+      <footer text-alight center>
+        <div class="container-fluid  p-3 my-3">
+          (c) Антонина Зайцева
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="popup-overlay" id = "popup">
+    <div class="popWindow popup-main-window">
+      <div class="close-btn">&times;</div>
+      
+      <div class="row my-4">
+        <h2 class="form-text">Обратная связь</h2>
+      </div>
+        <form method="POST" class="row mx-5 my-2 gy-1 popup-form">
+        <label class = "col-12">Имя:<br><input type = "name" name = "popup-name" required></label>
+        <label class = "col-12">E-mail:<br><input type = "email" name = "popup-email" required></label>
+        <label class = "col-12">Сообщение:<br><textarea name = "popup-message"></textarea></label>
+        <label class = "col-12">
+          Согласен(на) с политикой обработки персональных данных
+        <input type = "checkbox" name = "popup-checkbox" required>
+        </label>
+        <label class = "col-12"><input type = "submit" name = "popup-submit" class = "popup-submit"></label>
+      </form>
+    </div>
+    <br>
+    <div class="popWindow thank-you-window">
+      <div class="close-btn">&times;</div>
+      <br><br>
+      <p class = "thank-you-message">
+      Сообщение отправлено
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
